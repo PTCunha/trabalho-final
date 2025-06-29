@@ -3,7 +3,7 @@
 name: 'Execução Manual'
 
 on:
-    workflow_dispach:
+  workflow_dispatch:
 
 jobs:
     2e2-tests:
