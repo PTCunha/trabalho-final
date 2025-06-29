@@ -1,5 +1,3 @@
-# CI nível 1 - teste
-
 name: 'Execução Manual'
 
 on:
