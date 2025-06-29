@@ -11,8 +11,7 @@ jobs:
         steps: 
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
-                with:
-                    node-version:22.x
+                with: node-version:22.x
             - name: Instalando Yarn
             run: npm install -f
 
