@@ -22,7 +22,7 @@ jobs:
         run: yarn
 
       - name: Instalando Playwright
-        run: yarn playwright install
+        run: npx playwright install
 
       - name: Executando teste E2E
         run: yarn run e2e
