@@ -13,8 +13,9 @@ jobs:
         with:
           node-version: 22.x
 
-      - name: Instalando Yarn
-        run: npm install -f
+      # Remova este passo!
+      # - name: Instalando Yarn
+      #   run: npm install -f
 
       - name: Instalando dependências
         run: yarn
