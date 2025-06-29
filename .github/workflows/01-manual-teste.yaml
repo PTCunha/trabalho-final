@@ -1,4 +1,4 @@
-#   CI nível 1
+# CI nível 1
 
 name: 'Execução Manual'
 
@@ -6,20 +6,23 @@ on:
   workflow_dispatch:
 
 jobs:
-    2e2-tests:
-        runs-on: ubunto-latest
-        steps: 
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
-                with: node-version:22.x
-            - name: Instalando Yarn
-            run: npm install -f
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-            - name: Instalando dependências
-            run: yarn
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
 
-            - name: instalando Playright
-            run: yarn playright install
+      - name: Instalando Yarn
+        run: npm install -f
 
-            - name: executando teste E2E
-            run: yarn run e2e
+      - name: Instalando dependências
+        run: yarn
+
+      - name: Instalando Playwright
+        run: yarn playwright install
+
+      - name: Executando teste E2E
+        run: yarn run e2e
