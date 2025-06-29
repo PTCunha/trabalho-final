@@ -27,8 +27,3 @@ jobs:
           MAX_PATCH_LENGTH: 10000
           IGNORE_PATTERNS: /node_modules/**/*,*.md
           INCLUDE_PATTERNS: *.js,*.ts
-
-      # 👇 Se for usar Azure OpenAI, adicione abaixo assim (fora da env atual ou em outro job):
-      # env:
-      #   AZURE_API_VERSION: 2023-05-15
-      #   AZURE_DEPLOYMENT: chat-gpt-deploy
